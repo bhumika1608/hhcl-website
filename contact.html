@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - HHCL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+
+    .header-container {
+      background-color: #f8f9fa;
+      padding: 10px 30px;
+      border-bottom: 2px solid #dee2e6;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .company-name h5 {
+      margin: 0;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    .company-tagline {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    nav a.nav-link {
+      color: #003366;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+
+    nav a.nav-link:hover {
+      color: #007bff;
+    }
+
+    .contact-info i {
+      color: #003366;
+      margin-right: 5px;
+    }
+
+    #contact {
+      background-color: #e9ecef;
+      padding: 50px 20px;
+    }
+
+    #contact h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .form-control, .btn {
+      border-radius: 5px;
+    }
+
+    .map-address {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 0;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebea5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <div class="header-container d-flex flex-wrap align-items-center justify-content-between">
+    <!-- Logo and Company Info -->
+    <div class="d-flex align-items-center">
+      <img src="image/Hhcl logo.jpg" alt="HHCL Logo" width="60" height="60" class="me-3">
+      <div>
+        <h5>Hughes & Hughes Chem Limited</h5>
+        <div class="company-tagline">Environment Friendly Solutions</div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="d-none d-md-block">
+      <div class="d-flex">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="clients.html">Clients</a>
+        <a class="nav-link" href="awards.html">Awards</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Contact Info -->
+    <div class="text-end contact-info small">
+      <div><i class="fa-solid fa-phone"></i> <a href="tel:+911147629999" class="text-decoration-none text-dark">+91 11 47629999</a></div>
+      <div><i class="fas fa-envelope"></i> <a href="https://hugheschem.com" class=" text-decoration-none" target="_blank">sales@hughesschem.com</a></div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2><u>Contact Us</u></h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- Contact Form -->
+          <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+
+            <!-- Hidden options for FormSubmit -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
+
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+
+          <!-- Additional Contact Info -->
+          <div class="mt-4 text-center">
+            <p><strong>Email:</strong> sales@hughesschem.com</p>
+            <p><strong>Phone:</strong> +91 11 47629999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Google Map -->
+<div class="mt-4">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.850543385752!2d77.24754151483714!3d28.544211682452726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3daa7bfaa75%3A0x981ddadaa5e921fa!2sHughes+%26+Hughes+Chem+Ltd!5e0!3m2!1sen!2sin!4v1504778193816" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+  <!-- Address Below Map -->
+  <div class="map-address">
+    <strong>Our Location:</strong><br>
+   Hughes & Hughes Chem Ltd.
+2nd Floor, Bakshi House, 205-206, Building no, 40-41, Lala Lajpat Rai Rd, Nehru Place, New Delhi, Delhi 11001
+  </div>
+
+  <!-- Footer  -->
+<footer class="mt-5 text-white" style="background-color: #1c1c1c;">
+  <div class="container py-4">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4 mb-3">
+        <h5>About HHCL</h5>
+        <p style="font-size: 14px;">
+          Hughes & Hughes Chem Ltd. is committed to providing environment-friendly chemical solutions for sanitation, industrial cleaning, healthcare, and railway sectors across India.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled" style="font-size: 14px;">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="clients.html" class="text-white text-decoration-none">Clients</a></li>
+          <li><a href="awards.html" class="text-white text-decoration-none">Awards</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact</h5>
+        <p style="font-size: 14px;">
+          <strong>Hughes & Hughes Chem Ltd.</strong><br>
+          2nd Floor, Bakshi House, 205-206,<br>
+          Building 40-41, Lala Lajpat Rai Rd,<br>
+          Nehru Place, New Delhi - 110019<br><br>
+          📞 <a href="tel:+911147629999" class="text-white text-decoration-none">+91 11 47629999</a><br>
+          📧 <a href="https://hugheschem.com" class=" text-decoration-none" target="_blank">sales@hughesschem.com</a>
+        </p>
+      </div>
+    </div>
+
+    <hr style="border-top: 1px solid #555;">
+    <p class="text-center mb-0" style="font-size: 13px;">&copy; 2025 Hughes & Hughes Chem Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
